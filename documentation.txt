@@ -1,0 +1,14 @@
+//Printer documentation
+@media print {
+    body * {
+        display: none;
+    }
+
+    #content,
+    #content * {
+        display: block;
+    }
+}
+document.getElementById('print_invoice').addEventListener('click', () => {
+    print();
+})
